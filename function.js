@@ -79,6 +79,16 @@ word_check ("Santis");
 Write a method count_e(word) 
 that takes in a string word and returns the number of e's in the word */
 
-function count_e(word, letter) {
-    
+function count_e(str, letter) 
+{
+    let letterCount = 0;
+    for (let position = 0; position < str.length; position++)
+    {
+        if (str.charAt(position) == letter)
+        {
+        letterCount += 1;
+        }
+    }
+    return letterCount; 
 }
+console.log(count_e('letterhead', 'e'));
